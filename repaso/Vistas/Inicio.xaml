@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="repaso.Vistas.Inicio">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Ventana de Repaso"
+                   TextColor="red"
+                   HorizontalTextAlignment="End"
+            />
+            <Image Source="https://sige.uisrael.edu.ec/imagenes/Logo/Logo%20UISRAEL%20vertical%202020.png" />
+            <!--<Image Source="LogoIsrael.png" AnchorX="10" AnchorY="10"/>-->
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <Label Text="USUARIO" FontSize="20" Grid.Row="0" Grid.Column="0"/>
+                <Entry x:Name="txtUsuario" FontSize="20" Grid.Row="0" Grid.Column="1"/>
+
+                <Label Text="CONTRASEÑA" FontSize="20" Grid.Row="1" Grid.Column="0"/>
+                <Entry x:Name="txtClave" FontSize="20" IsPassword="true" Grid.Row="1" Grid.Column="1"/>
+            </Grid>
+            <Button x:Name="btnIniciar" Text="INICIAR" Clicked="btnIniciar_Clicked"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
